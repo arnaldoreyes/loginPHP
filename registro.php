@@ -20,22 +20,22 @@
                     </div>
                     <div class="card-body p-4 p-sm-5">
                         <h5 class="card-title text-center mb-5 fw-light fs-5">Registrarte</h5>
-                        <form>
+                        <form action="servidor/registro/registrar.php" method="POST">
 
                             <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="usuario" placeholder="usuario" required autofocus>
+                                <input type="text" class="form-control" id="usuario" name="usuario" placeholder="usuario" required autofocus>
                                 <label for="usuario">Usuario</label>
                             </div>
 
                             <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="correo" placeholder="Correo electrónico">
+                                <input type="email" class="form-control" id="correo" name="correo" placeholder="Correo electrónico" required>
                                 <label for="correo">Correo electrónico</label>
                             </div>
 
                             <hr>
 
                             <div class="form-floating mb-3">
-                                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña" required>
                                 <label for="password">Contraseña</label>
                             </div>
 
@@ -44,7 +44,7 @@
                                 <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Registrarte</button>
                             </div>
 
-                            <span class="d-block text-center mt-2 small"> ¿Tienes una cuenta? <a href="#">Inicia sesión</a></span>
+                            <span class="d-block text-center mt-2 small"> ¿Tienes una cuenta? <a href="index.php">Inicia sesión</a></span>
 
                             <hr class="my-4">
 

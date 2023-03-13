@@ -20,9 +20,9 @@
                                 <h3 class="login-heading mb-4">¡Bienvenido!</h3>
 
                                 <!-- Sign In Form -->
-                                <form>
+                                <form action="servidor/login/iniciarSesion.php" method="POST">
                                     <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+                                        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario">
                                         <label for="usuario">Usuario</label>
                                     </div>
                                     <div class="form-floating mb-3">
@@ -33,7 +33,7 @@
                                     <div class="d-grid">
                                         <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2" type="submit">Iniciar sesión</button>
                                         <div class="text-center">
-                                            <span class="small"> ¿No tienes una cuenta? <a href="#">Regístrate</a></span>
+                                            <span class="small"> ¿No tienes una cuenta? <a href="registro.php">Regístrate</a></span>
                                         </div>
                                     </div>
 
